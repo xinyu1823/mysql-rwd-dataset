@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>銷售資料分析 Dashboard</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            font-size: 18px;
+        }
+
+        .card p {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .notice {
+            background: white;
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+
+        /* 平板 */
+
+        @media (max-width: 768px) {
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        /* 手機 */
+
+        @media (max-width: 480px) {
+
+            main {
+                padding: 15px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>銷售資料分析 Dashboard</h1>
+
+        <p>MySQL + RWD</p>
+
+    </header>
+
+
+    <main>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h2>交易筆數</h2>
+
+                <p>300</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>銷售數量</h2>
+
+                <p>4,524</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>退貨數量</h2>
+
+                <p>63</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>淨銷售額</h2>
+
+                <p>NT$ 3,970,100</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="notice">
+
+            <h2>資料庫狀態</h2>
+
+            <p>
+                目前已成功建立 GitHub RWD Dashboard。
+            </p>
+
+            <p>
+                下一步將連接 MySQL 資料庫，
+                讓資料可以即時更新。
+            </p>
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
